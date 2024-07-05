@@ -1,0 +1,51 @@
+{
+  "name": "nurulanguagesupport",
+  "displayName": "NuruLanguageSupport",
+  "description": "Syntax highlighting for Nuru Programming Language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  
+  "scripts": {
+    "build": "tsc -p ."
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "nuru",
+        "aliases": [
+          "Nuru Programming Language",
+          "nuru",
+          "Nuru"
+        ],
+        "extensions": [
+          ".nr"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "nuru",
+        "scopeName": "source.nr",
+        "path": "./syntaxes/nuru.tmLanguage.json"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "nuru-icon-theme",
+        "label": "Nuru Icon Theme",
+        "path": "./file-icon-theme.json"
+      }
+    ]
+  },
+  "dependencies": {
+    "vscode": "^1.1.37",
+    "vscode-languageserver": "^9.0.1",
+    "vscode-languageserver-textdocument": "^1.0.11"
+  }
+}

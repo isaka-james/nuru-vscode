@@ -1,0 +1,16 @@
+{
+    "iconDefinitions": {
+        "nuruIcon": {
+            "iconPath": "./images/nuru-icon.svg"
+        }
+    },
+    "fileExtensions": {
+        "nuru": "nuruIcon"
+    },
+    "fileNames": {
+        ".nuru": "nuruIcon"
+    },
+    "languageIds": {
+        "nuru": "nuruIcon"
+    }
+}
